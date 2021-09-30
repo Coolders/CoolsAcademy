@@ -1,62 +1,78 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+# CoolsAcademy
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
 
-## About Laravel
+## Table of Contents
+1. [General Info](#general-info)
+2. [Concept](#Concept)
+3. [Stack and Technologies](#stack-technologies)
+4. [Installation and Setup](#installation-setup)
+5. [Collaboration](#collaboration)
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## General info
+***
+* This is a collaborative Laravel CRUD project for the Full Stack Development Bootcamp.
+* Project status: work in progress. Some image adjustments are missing since we use libraria faker.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## Concept
+***
 
-## Learning Laravel
+A software development group wants to create a web application to manage their online events such as workshops, masterclasses or webinars.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+Users will be able to see the description of an event, sign up and unsubscribe. They will be able to see the list of events they have signed up for. The administrator must have the tools for the management (CRUD) of the events.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+* Requisitos Funcionales
 
-## Laravel Sponsors
+- On the front page, the application will have a slider with the highlighted masterclasses. these will be selectable by the administrator.
+- On the cover there will be a paginated list with all the events ordered from the closest to the furthest.
+- The events will include at least: title, date / time, maximum number of participants, description and an image.
+- Past events must be kept in the list but identifiable as unavailable.
+- Users will need to register to sign up for an event. Once signed up, they will not be able to do it again.
+- When signing up for an event, they will receive an email (business - html) with the link (zoom, meets, etc ..) where it will be held, as well as remembering the title of the event, the time and the day.
+- Users will be able to see on one page the list of events to which they are registered.
+- The administrator will be able to CRUD the events.
+- When an event is full (maximum number of participants) no one will be able to register.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+## Stack and Technologies
 
-### Premium Partners
+* php 8.0 - https://www.php.net/
+* Laravel - https://laravel.com/
+* Composer 2.0.13 - https://getcomposer.org/
+* Bootstrap - https://getbootstrap.com/
+* SASS - https://sass-lang.com/
+* Trello - https://trello.com/
+* Heroku - https://www.heroku.com/
+* Figma - https://www.figma.com
+* Balsamiq - https://balsamiq.com/
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
 
-## Contributing
+## Installation and Setup
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+* Git clone https://github.com/Gabi2606/CoolsAcademy.git
 
-## Code of Conduct
+* Install Composer if you don't have already globally installed
+```
+$ composer install
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+* Or make an Update
+```
+$ composer update
 
-## Security Vulnerabilities
+* Laravel
+```
+$ php artisan serve
+$ php artisan test
+```
+*Run Sass
+```
+$ npm run watch
+```
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+## Collaboration
 
-## License
+* David Sánchez
+* Gabriela Piñeiro
+* Amr Hefny
+* Andriu Suárez
+* Andres Patiño
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
